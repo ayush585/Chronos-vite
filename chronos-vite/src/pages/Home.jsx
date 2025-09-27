@@ -18,8 +18,8 @@ export function TaskDemo() {
                 />
                 <button
                     onClick={async () => {
-                        const rc = await write.createTask(title || "Untitled");
-                        const created = rc?.logs?.[0]; // naive; depends on chain/abi coder
+                        await write.createTask(title || "Untitled");
+                        // const created = rc?.logs?.[0]; // naive; depends on chain/abi coder
                         setLastId("Created! (check explorer)");
                     }}
                     className="px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600"

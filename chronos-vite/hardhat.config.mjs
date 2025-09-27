@@ -1,11 +1,15 @@
-require("@nomicfoundation/hardhat-toolbox");
-require("@nomicfoundation/hardhat-verify");
+// hardhat.config.mjs
+import * as dotenv from "dotenv";
+dotenv.config();
 
-module.exports = {
+import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-verify";
+
+export default {
     solidity: "0.8.20",
     networks: {
         sepolia: {
-            url: process.env.RPC_URL,
+            url: process.env.RPC_URL || "",
             accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
         },
     },
