@@ -1,0 +1,17 @@
+{
+    "network": "sepolia",
+    "rpcUrl": "https://sepolia.infura.io/v3/YOUR_KEY",
+    "safeAddress": "0xSAFE_ADDRESS",
+    "owners": [
+        "0xOwner1",
+        "0xOwner2"
+    ],
+    "threshold": 2,
+    "modules": {
+        "spendingLimits": {
+            "token": "0x0000000000000000000000000000000000000000",
+            "dailyLimitWei": "1000000000000000000"
+        }
+    },
+    "notes": "Demo config for judges — replace addresses in prod."
+}

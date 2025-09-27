@@ -1,0 +1,10 @@
+network: sepolia
+entryPoint: "0xEntryPoint"
+paymaster: "0xPaymaster"
+policy:
+  spendCapWei: "20000000000000000" # 0.02 ETH
+  allowedContracts:
+    - ${VITE_CHRONOS_ADDRESS}
+metadata:
+  owner: "0xOwner"
+  contact: "owner@example.com"
